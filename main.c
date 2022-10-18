@@ -7,7 +7,7 @@ int main (void) {
 	float Result; 
 	printf("Число: ");
 	scanf("%f",&Numeral);
-	printf("Операция (+,-,*,/,pow,sqrt,sin,cos,tan): "); 
+	printf("Операция (+,-,*,/,log,pow,sqrt,sin,cos,tan): "); 
 	scanf("%s",&Operation);
 	Result = Calculate(Numeral, Operation); 
 	printf("%6.2f\n",Result);

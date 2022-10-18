@@ -2,7 +2,7 @@
 #include <math.h> 
 #include <string.h> 
 #include "calculate.h"
-
+//comment
 float Calculate(float Numeral, char Operation[4]) {
 	float SecondNumeral;
 	if(strncmp(Operation, "+", 1) == 0) {
@@ -27,6 +27,8 @@ float Calculate(float Numeral, char Operation[4]) {
 			return(Numeral / SecondNumeral);
 
 		}
+	} else if(strncmp(Operation, "log", 3) == 0) {
+		return log(Numeral);
 	} else if(strncmp(Operation, "pow", 3) == 0){
 		printf("Степень: "); 
 		scanf("%f",&SecondNumeral); 
